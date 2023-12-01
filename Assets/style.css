@@ -1,0 +1,100 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+header{
+    background-color: #0084FD;
+    height: 6vh;
+}
+
+.container{
+    padding-top: 10px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#menu-a-tendina{
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    z-index: -1;
+    font-size: 20px;
+}
+
+header .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+
+.bottoni-bianchi{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+@media screen and ( max-width : 768px) {
+    .container{
+        width: 90%;
+    }
+
+    #menu-a-tendina{
+        z-index: 1;
+    }
+
+    .container ul{
+        z-index: -1;
+    }
+}
+
+@media screen and ( max-width : 480px) {
+    .container{
+        width: 100%;
+ }
+}
+
+#card-grande{
+    border: 1px dashed black;
+    height: 30vh;
+    width: 66%;
+    border-radius: 20px;
+}
+
+#card-piccola{
+    border: 1px dashed black;
+    height: 30vh;
+    width: 33%;
+    border-radius: 20px;
+}
+
+.card-piccole{
+    border: 1px dashed black;
+    height: 30vh;
+    width: calc((100% / 3)- 20px);
+    border-radius: 20px;
+}
+
+.flex-container{
+    display: flex;
+    gap: 10px;
+}
+
+main{
+    margin-top: 3%;
+}

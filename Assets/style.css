@@ -49,6 +49,142 @@ header .container nav ul{
     padding: 5px;
 }
 
+
+
+#card-grande{
+    width: 68%;
+    border-radius: 20px;
+    background-color: #B5DDFF;
+    position: relative;
+}
+
+.card-piccole{
+    width: 33%;
+    border-radius: 20px;
+    background-color: #B5DDFF;
+}
+
+.flex-container{
+    display: flex;
+    gap: 20px;
+}
+
+main{
+    margin-top: 3%;
+}
+
+.flex-container:nth-child(2){
+    margin-top: 3%;
+}
+
+.container-card{
+    width: 95%;
+    margin: 30px auto;
+}
+
+.card-piccole, #card-grande h3,h2{
+    color: #1A90FD;
+    padding-bottom: 20px;
+}
+
+#card-grande p{
+    max-width: 40%;
+}
+
+.bottoni-blu{
+    background-color: #0084FD;
+    border-radius: 20px;
+    padding: 3% 20% 3% 20%;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+#phone{
+    width: 30%;
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+}
+
+.tiny-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons{
+    font-size: 70px;
+}
+
+.lorems{
+    text-align: center;
+}
+
+.strategic-planning{    
+    width: 100%;
+    background-color: #9792E4;
+    margin-top: 3%;
+    padding-top: 6%;
+    padding-bottom: 3%;
+    padding-inline: 10%;   
+}
+
+.strategic-planning img{
+    width: 60%;
+}
+
+#app-developement img{
+    width: 70%;
+    margin-bottom: 5%;
+}
+
+.strategic-planning h2{
+    color: white;
+    padding-top: 10%;
+}
+
+
+
+#no-border-card p{
+    color: white;
+    width: 70%;
+}
+
+#no-border-card h2{
+    width: 50%;
+}
+
+#app-developement{
+    margin-top: 15%;
+    padding: 2%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app-developement p{
+    text-align: center;
+    margin-top: 3%;
+    font-style: oblique;
+}
+
+#bottone-viola{
+    background-color: #9792E4;
+    border: none;
+    padding: 15px;
+    border-radius: 40px;
+}
+
+.flex-planning{
+    display: flex;
+}
+
+
+
+/*------Responsive Section------*/
 @media screen and ( max-width : 768px) {
     .container{
         width: 90%;
@@ -61,40 +197,37 @@ header .container nav ul{
     .container ul{
         z-index: -1;
     }
+
+    #phone{
+        position: relative;
+        left: 5%;
+    }
+
+    #card-grande p{
+        max-width: 100%;
+    }
+
+    .flex-planning{
+        flex-direction: column;
+    }
+
+    #no-border-card img{
+        width: 100%;
+    }
+
+    #no-border-card h2{
+        font-size: 350%;
+        width: 100%;
+    }
+
+    #no-border-card p{
+        width: 100%;
+    }
+
 }
 
 @media screen and ( max-width : 480px) {
     .container{
         width: 100%;
  }
-}
-
-#card-grande{
-    border: 1px dashed black;
-    height: 30vh;
-    width: 66%;
-    border-radius: 20px;
-}
-
-#card-piccola{
-    border: 1px dashed black;
-    height: 30vh;
-    width: 33%;
-    border-radius: 20px;
-}
-
-.card-piccole{
-    border: 1px dashed black;
-    height: 30vh;
-    width: calc((100% / 3)- 20px);
-    border-radius: 20px;
-}
-
-.flex-container{
-    display: flex;
-    gap: 10px;
-}
-
-main{
-    margin-top: 3%;
 }

@@ -230,11 +230,61 @@ main{
     font-size: 90%;
 }
 
+.benefits{
+    width: 100%;
+    background-color: #9792E4;
+    padding-block: 3%;
+}
 
+.benefits #working-with-us{
+    text-align: center;
+    color: white;
+    font-size: 230%;
+}
 
+.cards-benefits{
+    width: calc(100% / 3 - 2%);
+    background-color: white;
+    margin-top: 2%;
+    border-radius: 15px;
+}
 
+.flex-benefits{
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+}
 
+.setup-cards{
+    padding: 7%;
+}
 
+.setup-cards h1{
+    font-size: 250%;
+    color:  #9994E5;
+}
+
+.setup-cards h3{
+    color:  #9994E5;
+    padding-top: 3%;
+}
+
+.setup-cards p{
+    font-size: 80%;
+    color: gray;
+    padding-top: 5%;
+    line-height: 20px;
+}
+
+.purple-button{
+    background-color: #9994E5;
+    padding-inline: 15%;
+    padding-block: 3%;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    margin-top: 5%;
+}
 
 
 
@@ -276,6 +326,14 @@ main{
 
     #no-border-card p{
         width: 100%;
+    }
+
+    .cards-benefits{
+        width: 45%;
+    }
+
+    .flex-benefits{
+        gap: 5%;
     }
 }
 
@@ -327,5 +385,14 @@ main{
     .cards img{
         width: 50%;
         height: 60%;
+    }
+
+    .flex-benefits{
+        flex-direction: column;
+    }
+
+    .cards-benefits{
+        margin: 2% auto;
+        width: 80%;
     }
 }
